@@ -1,7 +1,7 @@
 import pandas as pd
 
 for year in range(2017, 2024):
-    df = pd.read_csv(f"madden/madden_ratings_{year}.csv")
+    df = pd.read_csv(f"madden/madden_{year}_ratings.csv")
 
     defense = df["Team"].drop_duplicates().reset_index(drop=True)
     defense = defense.to_frame()
