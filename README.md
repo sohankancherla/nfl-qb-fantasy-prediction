@@ -18,7 +18,7 @@ Data Sources:
   - Madden Data (https://maddenratings.weebly.com/)
   - Fantasy Points Data (https://www.fantasypros.com/nfl/reports/leaders/qb.php?year=2023)
   - Schedule Data (https://www.nflweather.com/)
-    
+
 #### Methodology
 I initially wanted to use a Time Series model but it would be difficult to include multiple features and I would need a new model for each player. So instead I decided to use a Linear Regression model and add more features that could impact a QB's performance. Here are the features I used:
 ![image](https://github.com/sohankancherla/nfl-qb-fantasy-prediction/assets/30853467/b588ab60-65c1-4687-a75f-cdc5459961cf)
