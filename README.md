@@ -21,11 +21,13 @@ Data Sources:
 
 #### Methodology
 I initially wanted to use a Time Series model but it would be difficult to include multiple features and I would need a new model for each player. So instead I decided to use a Linear Regression model and add more features that could impact a QB's performance. Here are the features I used:
+
 ![image](https://github.com/sohankancherla/nfl-qb-fantasy-prediction/assets/30853467/b588ab60-65c1-4687-a75f-cdc5459961cf)
 
 #### Results
 Suprisingly the best model was a simple linear regression with no polynomial features. All the models I tested did have similar MSE but Linear Regression performed the best on the 2023 and had the fastest training time.
 ![image](https://github.com/sohankancherla/nfl-qb-fantasy-prediction/assets/30853467/e6926cd4-2167-49e5-bbfe-9d2f0288a71a)
+
 These are the weight with the corresponding featuers:
 ![image](https://github.com/sohankancherla/nfl-qb-fantasy-prediction/assets/30853467/af5bacbe-b3ea-4c4d-a6de-d0dcd67c0a69)
 
