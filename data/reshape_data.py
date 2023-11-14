@@ -24,11 +24,12 @@ for year in range(2017, 2024):
     reshaped_data.sort_values(by=['Name', 'Week'], inplace=True)
 
     def shift_scores(player_data):
-        for i in range(1, 18):  # Shifting for 1 to 17 weeks
+        for i in range(1, weeks):
             player_data[f'Score_{i}_weeks_ago'] = player_data['Score'].shift(i)
         return player_data
 
     reshaped_data = reshaped_data.groupby('Name').apply(shift_scores)
     reshaped_data.reset_index(drop=True, inplace=True)
+    reshaped_data.sort_values(by=['Team','Name', 'Week'], inplace=True)
 
     reshaped_data.to_csv(f"reshaped/{year}.csv")
