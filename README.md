@@ -26,6 +26,7 @@ I initially wanted to use a Time Series model but it would be difficult to inclu
 
 #### Results
 Among the regression models, suprisingly the best model was a simple linear regression with no polynomial features. All the models I tested did have similar MSE but Linear Regression performed the best on the 2023 data and had the fastest training time. Here is a plot of the regression models and mse:
+
 ![image](https://github.com/sohankancherla/nfl-qb-fantasy-prediction/assets/30853467/e6926cd4-2167-49e5-bbfe-9d2f0288a71a)
 
 These are the weight with the corresponding featuers:
